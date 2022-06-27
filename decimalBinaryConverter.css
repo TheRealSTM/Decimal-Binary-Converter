@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:whitesmoke;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    width: 60%;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs > label {
+    padding: 25px;
+    background-color:coral;
+    font-weight: bold;
+}
+
+.tabs .tab {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    order: 1;
+    display: none;
+}
+
+.tabs .tab h2 {
+    font-size: 2em;
+}
+
+.tab label, .tab input {
+    display: inline-block;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.tabs input[type="radio"]:checked + label {
+    display: block;
+    background: white;
+}

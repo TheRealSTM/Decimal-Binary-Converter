@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Decimal-Binary Converter</title>
+    <script src="decimalBinaryConverter.js" defer></script>
+    <link rel="stylesheet" href="decimalBinaryConverter.css">
+</head>
+<body>
+    <h1 class="header">Decimal-Binary Converter</h1>
+    <div class="tabs">
+        <input type="radio" id="decimal-to-binary-tab" name="tabs" checked="checked">
+        <label for="decimal-to-binary-tab">Decimal to Binary</label>
+        <div class="tab">
+            <h2>Decimal to Binary</h2>
+            <div class="input-container">
+                <label for="decimal-input">Decimal:</label>
+                <input id="decimal-input" type="text" />
+                <input id="decimal-binary-convert" type="submit" value="Convert" />
+            </div>
+            <div class="output-container">
+                <div id="decimal-binary-error"></div>
+                <div id="decimal-binary-output"></div>
+            </div>
+        </div>
+        <input type="radio" id="binary-to-decimal-tab" name="tabs" checked="checked">
+        <label for="binary-to-decimal-tab">Binary to Decimal</label>
+        <div class="tab">
+            <h2>Binary to Decimal</h2>
+            <div class="input-container">
+                <label for="binary-input">Binary:</label>
+                <input id="binary-input" type="text" />
+                <input id="binary-decimal-convert" type="submit" value="Convert" />
+            </div>
+            <div class="output-container">
+                <div id="binary-decimal-error"></div>
+                <div id="binary-decimal-output"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
